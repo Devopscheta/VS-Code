@@ -109,13 +109,21 @@ hr {
   .cancelbtn, .signupbtn {
      width: 300%;
   }
+/* Change styles for cancel button and Login button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .Loginbtn {
+     width: 300%;
+  }
+
 }
 </style>
 <body>
 
-<h2><center>Modal Signup Form</center></h2>
+<h1>Modal Signup Form</h2>
 
 <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign Up</button>
+<a href = "login.html"><button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button></a>
+
 
 <div id="id01" class="modal">
   <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
